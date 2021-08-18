@@ -351,7 +351,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #361cc1 #361cc1 #e1e1e1;
+  border-color: #ffcd33 #ffcd33 #e1e1e1;
   border-radius: 50%;
   border-width: 6px;
 }
@@ -1299,6 +1299,9 @@ p {
     margin-right: 0;
   }
 }
+.hiddenChar {
+  font-size: 0;
+}
 .video-wrapper .video-image img {
   width: 100%;
 }
@@ -1475,6 +1478,7 @@ p {
        10.SUBSCRIBE  css 
 ===========================*/
 .subscribe-area {
+  max-width: 600px;
   padding: 40px 50px;
   -webkit-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
   -moz-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
@@ -1758,7 +1762,7 @@ p {
 .back-to-top:hover {
   color: #000;
 }
-/* ------------------Floating Action Button---------------- */
+/* =======Floating Action Button=======*/
 .fab-container {
   display: flex;
   flex-direction: column;
@@ -1845,4 +1849,92 @@ p {
 .swal2-styled.swal2-confirm {
   background-color: #ffcd33;
   color: #000;
+}
+/* =====Icons===== */
+@font-face {
+  font-family: "LineIcons";
+  src: url("../fonts/LineIcons.eot");
+  src: url("../fonts/LineIcons.eot") format("embedded-opentype"),
+    url("../fonts/LineIcons.woff2") format("woff2"),
+    url("../fonts/LineIcons.woff") format("woff"),
+    url("../fonts/LineIcons.ttf") format("truetype"),
+    url("../fonts/LineIcons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+	base class definition
+-------------------------*/
+.lni {
+  display: inline-block;
+  font: normal normal normal 1em/1 "LineIcons";
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.lni-bar-chart::before {
+  content: "\ea2d";
+}
+
+.lni-cog::before {
+  content: "\ea6f";
+}
+
+.lni-bolt-alt::before {
+  content: "\ea35";
+}
+
+.lni-chevron-up::before {
+  content: "\ea5e";
+}
+.lni-wechat::before {
+  content: "\ebef";
+  color: #000;
+  font-size: 42px;
+}
+
+.lni-whatsapp::before {
+  content: "\ebf1";
+  color: #000;
+  font-size: 38px;
+}
+
+.lni-facebook-filled::before {
+  content: "\eab2";
+}
+
+.lni-twitter-filled::before {
+  content: "\ebd6";
+}
+
+.lni-instagram-filled::before {
+  content: "\eaf1";
+}
+
+.lni-linkedin-original::before {
+  content: "\eb14";
+}
+
+/* ======default===== */
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pt-70 {
+  padding-top: 70px;
 }
