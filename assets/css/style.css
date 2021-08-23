@@ -1406,6 +1406,8 @@ p {
   .counter-wrapper .single-counter::before {
     max-width: 100px;
     height: 80px;
+    left: -2px;
+  top: -2px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1451,7 +1453,10 @@ p {
 }
 @media (max-width: 767px) {
   .counter-wrapper .single-counter .count {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .header-hero{
+    padding: 120px 0;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
